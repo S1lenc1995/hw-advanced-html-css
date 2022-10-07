@@ -1,0 +1,74 @@
+@import "./mixins";
+@import "./\ variables";
+
+.footer{
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer-conent{
+    text-align: center;
+}
+
+.icon-footer{
+    @media(min-width: 768px){
+    margin-top: 37px;
+    }
+}
+.icon-footer__block{
+    position: relative;
+    display: inline-block;
+    &--name{
+        @include icon;
+    }
+}
+
+.footer-post{
+    @include main-text;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    padding-top: 38px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.footer-discription{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #B9B9B9;
+    line-height: 20px;
+    margin-bottom: 26px;
+    &--curabitur{
+        display: none;
+    }
+    @media(min-width: 768px){
+        font-size: 16px;
+        line-height: 28px;
+        &--curabitur{
+            display: inline-block;
+        }
+    }
+    @media(min-width: 1200px){
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.footer-contact{
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B9B9B9;
+    padding-bottom: 47px;
+    padding-top: 25px;
+    width: 75%;
+    margin: auto;
+    @media(min-width: 768px){
+        font-size: 14px;
+}
+}
+
